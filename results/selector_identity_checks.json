@@ -1,0 +1,51 @@
+{
+  "logistic_regression": {
+    "model_source": "/Users/vickey/Downloads/Sem4课程/dsai4207/DSAI4207_project/results/phase3/models",
+    "source_training_rows": 2000,
+    "n_features": 4,
+    "k": 8,
+    "retrained": false,
+    "validation_replay_rows": 1003,
+    "validation_choices_match": true,
+    "validation_probability_max_difference": 8.326672684688674e-17,
+    "test_gold_used": false,
+    "actual_devices": [
+      "cpu"
+    ],
+    "load_replay_predict_seconds": 0.00911358295707032,
+    "test_prediction_seconds": 0.00022266700398176908,
+    "memory": {
+      "process_peak_rss_bytes": 443973632
+    },
+    "test_predictions_sha256": "e03f2e10445ef74b6d9ca9f3fa1d2b72d4525ac917c361fb45062b729b531310",
+    "selection_counts": {
+      "diverse": 1502,
+      "similar": 1208,
+      "balanced": 370
+    }
+  },
+  "tabpfn_v2": {
+    "model_source": "/Users/vickey/Downloads/Sem4课程/dsai4207/DSAI4207_project/results/phase3/models",
+    "source_training_rows": 2000,
+    "n_features": 4,
+    "k": 8,
+    "retrained": false,
+    "validation_replay_rows": 1003,
+    "validation_choices_match": true,
+    "validation_probability_max_difference": 2.5086975052879268e-08,
+    "test_gold_used": false,
+    "actual_devices": [
+      "mps"
+    ],
+    "load_replay_predict_seconds": 2.347294124949258,
+    "test_prediction_seconds": 1.2088801659992896,
+    "memory": {
+      "process_peak_rss_bytes": 714260480,
+      "mps_current_allocated_bytes": 28978432
+    },
+    "test_predictions_sha256": "d47b8f5b09c5b97a49dca6710bb77b7c6f850726053c569135b7c5316b2bd429",
+    "selection_counts": {
+      "similar": 3080
+    }
+  }
+}

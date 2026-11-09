@@ -1,0 +1,10 @@
+{
+  "new_predictions": 6144,
+  "actual_device": "mps",
+  "wall_seconds_excluding_model_load": 2287.2818920410355,
+  "memory": {
+    "process_peak_rss_bytes": 6698827776,
+    "mps_current_allocated_bytes": 3112987904
+  },
+  "similar_generation_calls": 0
+}

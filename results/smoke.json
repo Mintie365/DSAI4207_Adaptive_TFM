@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "n_queries": 8,
+  "device": "mps",
+  "repeat_diverse_raw_matches": true,
+  "similar_generation_calls": 0
+}

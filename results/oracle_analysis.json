@@ -1,0 +1,113 @@
+{
+  "accuracy": 0.9175324675324675,
+  "correct_count": 2826,
+  "gain_vs_similar": 0.02922077922077922,
+  "recoverable_similar_errors": 90,
+  "retrospective_upper_bound_not_deployable": true,
+  "witness_rule": "correct S, then correct B, then correct D; otherwise S; evaluation only",
+  "complementarity": {
+    "n": 3080,
+    "prediction_agreement": {
+      "all_three_same": 0.9175324675324675,
+      "exactly_two_agree": 0.0737012987012987,
+      "all_three_different": 0.008766233766233766
+    },
+    "invalid_agreement_policy": "Each invalid raw response (trimmed only) is a tagged category; distinct invalid outputs are not collapsed to None. All remain incorrect.",
+    "all_three_valid_query_count": 3018,
+    "all_valid_prediction_agreement": {
+      "all_three_same": 0.9297548045062956,
+      "exactly_two_agree": 0.06626905235255136,
+      "all_three_different": 0.003976143141153081
+    },
+    "success_counts": {
+      "0": 254,
+      "1": 95,
+      "2": 104,
+      "3": 2627
+    },
+    "success_fractions": {
+      "0": 0.08246753246753247,
+      "1": 0.030844155844155844,
+      "2": 0.033766233766233764,
+      "3": 0.852922077922078
+    },
+    "rescue": {
+      "similar_wrong_diverse_correct": {
+        "count": 67,
+        "fraction": 0.021753246753246754
+      },
+      "similar_wrong_balanced_correct": {
+        "count": 63,
+        "fraction": 0.020454545454545454
+      },
+      "diverse_wrong_similar_correct": {
+        "count": 95,
+        "fraction": 0.030844155844155844
+      },
+      "balanced_wrong_similar_correct": {
+        "count": 59,
+        "fraction": 0.019155844155844155
+      },
+      "similar_wrong_at_least_one_alternative_correct": {
+        "count": 90,
+        "fraction": 0.02922077922077922
+      }
+    },
+    "correctness_patterns": {
+      "000": 254,
+      "001": 23,
+      "010": 27,
+      "011": 40,
+      "100": 45,
+      "101": 50,
+      "110": 14,
+      "111": 2627
+    },
+    "agreement_matrix": [
+      [
+        1.0,
+        0.9295454545454546,
+        0.9454545454545454
+      ],
+      [
+        0.9295454545454546,
+        1.0,
+        0.9512987012987013
+      ],
+      [
+        0.9454545454545454,
+        0.9512987012987013,
+        1.0
+      ]
+    ],
+    "pairwise": [
+      {
+        "left": "similar",
+        "right": "diverse",
+        "prediction_disagreement_count": 217,
+        "prediction_disagreement_rate": 0.07045454545454545,
+        "correctness_disagreement_count": 162,
+        "correctness_disagreement_rate": 0.052597402597402594,
+        "different_but_both_wrong_count": 55
+      },
+      {
+        "left": "similar",
+        "right": "balanced",
+        "prediction_disagreement_count": 168,
+        "prediction_disagreement_rate": 0.05454545454545454,
+        "correctness_disagreement_count": 122,
+        "correctness_disagreement_rate": 0.03961038961038961,
+        "different_but_both_wrong_count": 46
+      },
+      {
+        "left": "diverse",
+        "right": "balanced",
+        "prediction_disagreement_count": 150,
+        "prediction_disagreement_rate": 0.048701298701298704,
+        "correctness_disagreement_count": 114,
+        "correctness_disagreement_rate": 0.03701298701298701,
+        "different_but_both_wrong_count": 36
+      }
+    ]
+  }
+}

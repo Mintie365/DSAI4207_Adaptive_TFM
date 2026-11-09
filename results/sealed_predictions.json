@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "test_queries": 3080,
+  "new_diverse_balanced": 6160,
+  "similar_reused": 3080,
+  "new_similar_generations": 0,
+  "file_hashes": {
+    "new_predictions.jsonl": "36fbd5893457f7c62ad0f9cde610f1a18f9fe8ffdaf90c46e4bea6f1594d5dd6",
+    "similar_reused.jsonl": "808815d940f6382b9aebe81171905468511407a6c75108ff6c5bcaff2ad26a90",
+    "logistic_regression_test.csv": "e03f2e10445ef74b6d9ca9f3fa1d2b72d4525ac917c361fb45062b729b531310",
+    "tabpfn_v2_test.csv": "d47b8f5b09c5b97a49dca6710bb77b7c6f850726053c569135b7c5316b2bd429"
+  },
+  "protocol_hash": "679bc059c5d4eac275716e0704b3f6c51f99e016c371b450e0aba4e985ab26ec",
+  "sealed_before_new_evaluation": true
+}

@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "pool_size": 7000,
+  "meta_training": 2000,
+  "k": 8,
+  "features": [
+    "max_similarity",
+    "mean_similarity",
+    "entropy_bits",
+    "top_label_vote"
+  ],
+  "similar_reused": 3080,
+  "new_similar_generations": 0,
+  "new_diverse_balanced_predictions": 6160,
+  "test_queries": 3080,
+  "original_phase3_models_loaded": true,
+  "retrained": false,
+  "tuned": false,
+  "four_shot_inputs_used": false,
+  "test_gold_used_only_for_evaluation": true,
+  "prior_test_exposure_acknowledged": true,
+  "previous_files_unchanged": 55682,
+  "unit_tests": {
+    "tests": 171,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_sha256": {
+    "prepare_features.py": "3e5434adb8753ca2b5885621960edc39454739dde7ff2be7457230eecbd58317",
+    "run.py": "0caef9448562b96b9c0426ba9476892c0baa3ddae11da75d36f3d7fc06a5d630",
+    "predict_selectors.py": "1663b16cbae35cc51aefe35459bd08028bf7a68f1618352efe89e3a92ce33cb7",
+    "analysis.py": "516bb33f97e376d9639ac2dbd5ca0ce8e4cb20e1e42959ad4ae849ece5eb163c",
+    "test_experiment.py": "a80e6ef63a91b4781d59f553c706c602d47f9462bd2ddd329c424ed6343251c0",
+    "qwen_predictions.py": "069402819aa69636d0b9ba738bd00a00628d71ba3cd8c1ca44eca77968ee04b8",
+    "common.py": "e6a7a4febaff90932494803730d8895d095f308132df039bb191b86104714438",
+    "evaluation_metrics.py": "6bb0075a913236d41280838c8fc5b3d3dca38794cc3584ea9b142ee7bb0a7336"
+  },
+  "protocol_sha256": "f6ca006bdebfc9f3925e5c18ab98b1d2fc4cb36146f151cf6f780227e0aa970f"
+}
