@@ -1,0 +1,56 @@
+seed: 42
+
+dataset:
+  name: DeepPavlov/hwu64
+  config: default
+  intents_config: intents
+  train_split: train
+  test_split: test
+  expected_train: 8954
+  expected_test: 1076
+  expected_classes: 64
+
+split:
+  demonstration_pool_ratio: 0.70
+  meta_training_ratio: 0.20
+  validation_ratio: 0.10
+
+embedding:
+  model: sentence-transformers/all-MiniLM-L6-v2
+  revision: 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+  batch_size: 64
+  max_seq_length: 256
+  device: auto
+
+retrieval:
+  candidate_pool_size: 32
+  exclude_identical_text: true
+
+selection:
+  k: 8
+  mmr_lambda: 0.5
+  strategies: [similar, diverse, balanced]
+  tie_order: [similar, balanced, diverse]
+
+llm:
+  model: Qwen/Qwen2.5-1.5B-Instruct
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  device: auto
+  max_new_tokens: 32
+  max_input_tokens: 4096
+  batch_size: 1
+  do_sample: false
+  torch_dtype: auto
+
+meta_selector:
+  logistic_regression_c: [0.01, 0.1, 1.0, 10.0]
+  logistic_class_weight: [null, balanced]
+  cv_folds: 5
+  tie_tolerance: 0.000001
+  tabpfn_version: v2
+  tabpfn_estimators: 4
+  tabpfn_device: auto
+
+evaluation:
+  bootstrap_replicates: 5000
+  bootstrap_seed: 42

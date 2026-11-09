@@ -1,0 +1,7 @@
+{
+  "repository": "Prior-Labs/TabPFN-v2-clf",
+  "revision": "275f19d2add9c2c0de38f9ebaded3856599fa2e7",
+  "filename": "tabpfn-v2-classifier-finetuned-zk73skhh.ckpt",
+  "path": "data/checkpoints/tabpfn-v2-classifier-finetuned-zk73skhh.ckpt",
+  "sha256": "cf8c519c01eaf1613ee91239006d57b1c806ff5f23ac1aeb1315ba1015210e49"
+}

@@ -1,0 +1,22 @@
+# Tested protocol target: Python 3.12 on macOS Apple Silicon / MPS.
+# Keep TabPFN pinned because the experiment explicitly uses the v2 checkpoint/API.
+torch>=2.5,<3
+numpy>=1.26,<3
+pandas>=2.2,<3
+scikit-learn>=1.5,<2
+scipy>=1.13,<2
+datasets>=3,<5
+sentence-transformers>=3.4,<6
+transformers>=4.48,<5
+tabpfn==9.2.0
+huggingface-hub>=0.34,<1
+tokenizers>=0.20,<0.24
+safetensors>=0.4,<1
+joblib>=1.3,<2
+matplotlib>=3.8,<4
+PyYAML>=6,<7
+pytest>=8,<10
+filelock>=3.13,<5
+tqdm>=4.66,<5
+reportlab==4.4.10
+accelerate>=1,<2
