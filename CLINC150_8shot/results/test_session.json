@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "operations": 13500,
+  "new_operations": 9487,
+  "elapsed_seconds": 3427.081082208897,
+  "memory": {
+    "process_peak_rss_bytes": 4741545984,
+    "mps_current_allocated_bytes": 3112987904
+  },
+  "device": "mps"
+}

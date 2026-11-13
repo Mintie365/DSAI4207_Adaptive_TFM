@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "repeat_consistent": true,
+  "first_prompt_tokens": 916,
+  "device": "mps",
+  "repeated": {
+    "target_label": "translate",
+    "label_token_count": 1,
+    "sum_log_likelihood": -0.0005295066512189806,
+    "mean_log_likelihood": -0.0005295066512189806,
+    "includes_eos": false,
+    "prompt_hash": "695c561d3be598e6719bb076e6f7cea6f4167ed4690aae18d389cda8b59c2ac8",
+    "prompt_tokens": 916
+  }
+}

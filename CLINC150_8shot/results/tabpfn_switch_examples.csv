@@ -1,0 +1,11 @@
+query_id,outcome_vs_similar,query,gold_intent,similar_prediction,balanced_prediction,tabpfn_strategy
+test_000263,beneficial,can i purchase a vacation using this,pto_request,pto_request_status,pto_request,balanced
+test_000613,beneficial,i need hot dogs added to my shopping list please,shopping_list_update,todo_list_update,shopping_list_update,balanced
+test_001359,beneficial,how long until my next oil change,oil_change_when,oil_change_how,oil_change_when,balanced
+test_001361,beneficial,when's the next time i have to get an oil change,oil_change_when,oil_change_how,oil_change_when,balanced
+test_001364,beneficial,figure out when my car will next need an oil change,oil_change_when,oil_change_how,oil_change_when,balanced
+test_000815,harmful,i need to lock my account right now!,freeze_account,freeze_account,account_blocked,balanced
+test_001246,harmful,does bank of america give credit cards to people like me,new_card,new_card,what_are_your_hobbies,balanced
+test_001367,harmful,how soon until i will need to get my oil changed,oil_change_when,oil_change_when,oil_change_how,balanced
+test_001466,harmful,what are my benefits with this insurance,insurance,insurance,insurance_change,balanced
+test_001709,harmful,you have yo go to school on calendar,calendar,calendar,calendar_update,balanced

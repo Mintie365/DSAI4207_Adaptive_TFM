@@ -1,0 +1,23 @@
+{
+  "status": "paused_by_user",
+  "paused_unix": 1794529080.83526,
+  "phase": "meta_training_likelihood_scoring",
+  "completed_score_operations": 10237,
+  "planned_score_operations": 15000,
+  "complete_three_strategy_queries": 3412,
+  "score_log_sha256": "6a03c304339643b9fec1c1c8addd1b2a56fc8e7f06d400d4f7ccbd8f58f4bc4d",
+  "next_action": "Await explicit user resume instruction; run bash experiments/clinc150_8shot/run_experiment.sh",
+  "completed_phases": [
+    "official_data_preparation",
+    "duplicate_audit",
+    "all_embeddings",
+    "all_top32_and_8shot_plans",
+    "prompt_length_precheck",
+    "162_original_tests",
+    "6_clinc_tests",
+    "MPS_scoring_smoke"
+  ],
+  "selectors_trained": false,
+  "validation_inference_completed": false,
+  "test_inference_started": false
+}

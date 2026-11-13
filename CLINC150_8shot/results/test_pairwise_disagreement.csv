@@ -1,0 +1,16 @@
+split,left,right,prediction_disagreement_count,prediction_disagreement_rate,correctness_disagreement_count
+test,always_similar,always_diverse,274,0.06088888888888889,225
+test,always_similar,always_balanced,230,0.051111111111111114,185
+test,always_similar,logistic_regression,179,0.03977777777777778,147
+test,always_similar,tabpfn_v2,48,0.010666666666666666,40
+test,always_similar,oracle_retrospective,138,0.030666666666666665,138
+test,always_diverse,always_balanced,158,0.035111111111111114,134
+test,always_diverse,logistic_regression,108,0.024,92
+test,always_diverse,tabpfn_v2,258,0.05733333333333333,215
+test,always_diverse,oracle_retrospective,183,0.04066666666666666,139
+test,always_balanced,logistic_regression,154,0.03422222222222222,120
+test,always_balanced,tabpfn_v2,182,0.04044444444444444,145
+test,always_balanced,oracle_retrospective,151,0.033555555555555554,117
+test,logistic_regression,tabpfn_v2,154,0.03422222222222222,127
+test,logistic_regression,oracle_retrospective,158,0.035111111111111114,129
+test,tabpfn_v2,oracle_retrospective,133,0.029555555555555557,126

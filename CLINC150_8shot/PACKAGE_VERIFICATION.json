@@ -1,0 +1,9 @@
+{
+  "package_tests_passed": 168,
+  "failures": 0,
+  "syntax_checked": true,
+  "review_verifier_passed": true,
+  "measured_numerical_files_changed": false,
+  "models_and_large_caches_excluded": true,
+  "fresh_full_llm_reproduction_not_rerun": "original experiment already completed; this packaging check reruns unit tests and independent numerical verification only"
+}

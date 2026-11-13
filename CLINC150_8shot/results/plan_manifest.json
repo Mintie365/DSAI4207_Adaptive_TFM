@@ -1,0 +1,14 @@
+{
+  "meta_training": {
+    "sha256": "45a89cd6af524c4f9d2fa1942dff22392a5e2c5140c2cee82001e62bb54d7930",
+    "n": 5000
+  },
+  "validation": {
+    "sha256": "3c5beaa6d30e9876cb430f5f02d58a34fff9e337cd00b801dce87090417ddb8a",
+    "n": 3000
+  },
+  "test": {
+    "sha256": "6a27f4971e5fd626c89902dc08521f6c67021afa6655d4a7a8ba6526289e0409",
+    "n": 4500
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "repeat_consistent": true,
+  "first_prompt_tokens": 899,
+  "device": "mps",
+  "repeated": {
+    "predicted_label": "change_language",
+    "valid": true,
+    "parse_status": "canonical_match",
+    "raw_output": "change_language",
+    "prompt_tokens": 899,
+    "generated_tokens": 3,
+    "runtime_seconds": 0.3720924159279093,
+    "prompt_hash": "194bdb57b442843a429a3a1c3bb15eb9749808e5b72f803625ebd62bab465189",
+    "memory": {
+      "process_peak_rss_bytes": 4758716416,
+      "mps_current_allocated_bytes": 3113010176
+    },
+    "inference_identity_hash": "f1006322f9cf43aeed905026519f553bb573caa33fde338addfe5d7fae5366b8"
+  }
+}

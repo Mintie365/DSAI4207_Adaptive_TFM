@@ -1,0 +1,27 @@
+{
+  "software": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "torch": "2.15.0",
+    "transformers": "4.57.6",
+    "sentence-transformers": "5.7.0",
+    "tabpfn": "9.2.0"
+  },
+  "checkpoint_weight_integrity": {
+    "data/hub_cache/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/model.safetensors": {
+      "sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+      "matches_hub_blob_sha256": true
+    },
+    "data/hub_cache/models--sentence-transformers--all-MiniLM-L6-v2/snapshots/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/model.safetensors": {
+      "sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+      "matches_hub_blob_sha256": true
+    }
+  },
+  "all_cached_records_verified": {
+    "meta_label_scores.jsonl": 15000,
+    "validation_fixed_predictions.jsonl": 9000,
+    "test_fixed_predictions.jsonl": 13500
+  },
+  "original_files_unchanged": true
+}

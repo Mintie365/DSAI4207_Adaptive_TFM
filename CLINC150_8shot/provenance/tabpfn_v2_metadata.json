@@ -1,0 +1,49 @@
+{
+  "internal_holdout_accuracy": 0.392,
+  "internal_holdout_macro_f1": 0.29165714797643844,
+  "holdout_size": 1000,
+  "fit_seconds": 11.92154633300379,
+  "actual_devices": [
+    "mps"
+  ],
+  "checkpoint": {
+    "repository": "Prior-Labs/TabPFN-v2-clf",
+    "revision": "275f19d2add9c2c0de38f9ebaded3856599fa2e7",
+    "filename": "tabpfn-v2-classifier-finetuned-zk73skhh.ckpt",
+    "path": "/Users/vickey/Downloads/Sem4课程/dsai4207/DSAI4207_project/data/hub_cache/models--Prior-Labs--TabPFN-v2-clf/blobs/cf8c519c01eaf1613ee91239006d57b1c806ff5f23ac1aeb1315ba1015210e49",
+    "sha256": "cf8c519c01eaf1613ee91239006d57b1c806ff5f23ac1aeb1315ba1015210e49"
+  },
+  "n_training": 5000,
+  "features": [
+    "max_similarity",
+    "mean_similarity",
+    "entropy_bits",
+    "top_label_vote"
+  ],
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "datasets": "4.8.5",
+    "torch": "2.15.0",
+    "sentence-transformers": "5.7.0",
+    "transformers": "4.57.6"
+  },
+  "class_counts": {
+    "0": 1950,
+    "2": 1804,
+    "1": 1246
+  },
+  "retrained_on_clinc150": true,
+  "validation_used_for_tuning": false,
+  "test_gold_used": false,
+  "training_dataset_sha256": "07373458abd54dec9a61d56b8cfe33324392ef3ca01453e714c947915cc014ff",
+  "reload_predictions_verified": true,
+  "saved_artifact_hashes": {
+    "results/tabpfn_v2_validation_choices.csv": "0e8d22f47bb40c6522574fb2f2f8d2569c48a72a8ec2bb395060ae48688f8791",
+    "results/tabpfn_v2_test_choices.csv": "ec7484f8e4a2e23f23dcc1207bdc98d2351f97184f44f7455ae4b60161ae6d4c",
+    "models/tabpfn_v2_fit_context.npz": "f7767cc112a8553791989e514980c57c5ab4ff77d95a013899d965a4ace346e6",
+    "models/tabpfn_v2.tabpfn_fit": "786ec67684559276003069c70d4b5e0078a130793667ae2e9bd5a079c6fd0414"
+  }
+}

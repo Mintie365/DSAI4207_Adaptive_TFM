@@ -1,0 +1,21 @@
+{
+  "split": "validation",
+  "n": 3000,
+  "similar_correct": 2750,
+  "oracle_correct": 2831,
+  "oracle_accuracy": 0.9436666666666667,
+  "recoverable_errors": 81,
+  "oracle_gain_pp": 2.7,
+  "all_strategies_wrong": 169,
+  "correctness_patterns": {
+    "000": 169,
+    "001": 12,
+    "010": 15,
+    "011": 54,
+    "100": 23,
+    "101": 30,
+    "110": 19,
+    "111": 2678
+  },
+  "retrospective_not_deployable": true
+}

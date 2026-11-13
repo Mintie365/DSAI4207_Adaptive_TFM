@@ -1,0 +1,17 @@
+{
+  "status": "paused_by_user",
+  "paused_unix": 1794536638.1965609,
+  "phase": "test_fixed_strategy_inference",
+  "completed_score_operations": 15000,
+  "planned_score_operations": 15000,
+  "validation_predictions": 9000,
+  "test_predictions": 3969,
+  "planned_test_predictions": 13500,
+  "test_predictions_sha256": "0e6b3c36b7a7ef0b0f24891ffb57929969e4b07294eaa7dade358428f42d6074",
+  "selectors_trained": true,
+  "models_and_choices_frozen": true,
+  "validation_best_fixed": "balanced",
+  "frozen_protocol_sha256": "b355676fd1b2d30f4d2dd061c6daa98e16a1d6b41d046baa2bd30c9d8f163a1a",
+  "test_metrics_evaluated": false,
+  "next_action": "Wait for explicit user resume; continue pipeline.py test, then analysis.py test and analysis.py finalize; do not rerun completed training or change frozen sources."
+}

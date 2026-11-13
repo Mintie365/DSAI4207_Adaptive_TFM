@@ -1,0 +1,14 @@
+{
+  "exact_pairs": {
+    "test / train": 20,
+    "train / train": 11,
+    "train / validation": 16,
+    "test / validation": 5
+  },
+  "near_pairs": {
+    "train / train": 1552,
+    "train / validation": 909,
+    "test / train": 1345,
+    "test / validation": 255
+  }
+}

@@ -1,0 +1,5 @@
+split,method,actual_accuracy,same_proportion_random_routing_expected_accuracy,actual_minus_random_expectation_pp,posthoc_descriptive_only
+validation,logistic_regression,0.9233333333333332,0.9213955555555555,0.1937777777777705,True
+validation,tabpfn_v2,0.9183333333333332,0.9198266666666667,-0.14933333333334575,True
+test,logistic_regression,0.9126666666666666,0.9121443950617282,0.052227160493845126,True
+test,tabpfn_v2,0.9133333333333332,0.9124410370370369,0.089229629629628,True

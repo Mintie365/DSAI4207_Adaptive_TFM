@@ -1,0 +1,24 @@
+{
+  "n": 5000,
+  "distribution": {
+    "similar": 1950,
+    "balanced": 1804,
+    "diverse": 1246
+  },
+  "mean_margin": 0.03638555078000845,
+  "median_margin": 9.535232675261796e-05,
+  "effectively_tied_queries": 134,
+  "small_margin_counts": {
+    "1e-06": 134,
+    "0.0001": 2536,
+    "0.001": 3844,
+    "0.01": 4460,
+    "0.1": 4764
+  },
+  "majority_meta_label_accuracy": 0.39,
+  "tie_order": [
+    "similar",
+    "balanced",
+    "diverse"
+  ]
+}

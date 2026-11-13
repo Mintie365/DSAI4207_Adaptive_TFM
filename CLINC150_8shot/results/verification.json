@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "all_original_files_unchanged": true,
+  "protected_file_count": 682,
+  "phase1_sizes": {
+    "demonstration_pool": 10000,
+    "meta_training": 5000,
+    "validation": 3000,
+    "test": 4500
+  },
+  "oos_excluded": true,
+  "prediction_counts": {
+    "validation": 9000,
+    "test": 13500,
+    "training_scores": 15000
+  },
+  "four_features_only": true,
+  "train_labels_only_for_meta_supervision": true,
+  "selectors_retrained": true,
+  "test_protocol_verified": true,
+  "frozen_protocol_sha256": "b355676fd1b2d30f4d2dd061c6daa98e16a1d6b41d046baa2bd30c9d8f163a1a",
+  "strict_parser": true,
+  "no_prompt_truncation": true,
+  "qwen_device": "mps",
+  "bootstrap_replicates": 5000,
+  "bootstrap_scope": "query sampling only; not training seed uncertainty",
+  "source_hashes": {
+    "experiments/clinc150_8shot/analysis.py": "64b58198215184e9dd6cba919a91391aea8af573c5ed0aadee72549fe3778518",
+    "experiments/clinc150_8shot/test_clinc150.py": "8fd5a5c12ae5426b9c08ff44f785bb6d4f690f5435b59b34ecae3b3f6fafa11a",
+    "experiments/clinc150_8shot/common.py": "dbbb007c42f24162edf9cc7d0d7bc08a73983deeab8c197070625222b17f27ad",
+    "experiments/clinc150_8shot/pipeline.py": "506d2f9f46bfde35c3cc80dff94aec4105822b1b937b4b40d71ba0935a41eca1",
+    "experiments/clinc150_8shot/run_experiment.sh": "060e94f9077f3fdd5c2ca4f62721e7610c5deda96aac57a95da2c0bd2deaecb2",
+    "src/retrieval.py": "20ad85779b755306b3bfc5894c7e2fa9a59cee1beafc2807930db3cb9a2be1d9",
+    "src/selection.py": "6d371f24b170b97838ef599550cf534fdf2c50f8933bb80e1ed8e659250b42b8",
+    "src/meta_features.py": "ed47375c5e85289697bb6ab2542dea4a5ce78d4927ad7f7d9126d85a573dfab1",
+    "src/meta_scoring.py": "b5196942092cb31f623c38c18725c9abbf9d63689370e158fa3491d3726d5054",
+    "src/meta_selectors.py": "321883940922e7fa9d9fc302072a5b6abe190c45d665faf3cdad495f4c58c1f4",
+    "src/llm_inference.py": "8847f2024f53cfa73eecb1477362ae6da32f2340661f94969c848069f7cc24c1",
+    "src/prompting.py": "e1f6571311df190531e055a52295425eb2ce972d018cacbb2da3dc4211a09a26",
+    "src/label_parsing.py": "b938d16471910f1b02686493e07588afe3c836aee6f3fa7954ffcb02c23fe28b",
+    "src/experiment_cache.py": "05ec6a484b6dcd7548db26cbc6d914c73c6addc14ef53d63e3991595d4279b8a"
+  },
+  "all_37500_records_cache_verified": true,
+  "independent_sklearn_metrics_match": true,
+  "hub_weight_checks_passed": true,
+  "tests": {
+    "original_project": 162,
+    "clinc150": 6
+  },
+  "user_requested_pauses_resumed_successfully": true,
+  "final_summary_sha256": "2c38d2d3f53586e35167446e5f9847a9b2c462d7d492413ed0a3da193addf821",
+  "finished_unix": 1794541737.5476558
+}

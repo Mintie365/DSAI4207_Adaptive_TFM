@@ -1,0 +1,9 @@
+{
+  "unix": 1794535136.566014,
+  "n": 3000,
+  "prediction_sha256": "205959750746e4dbf736ca55a97990c9fe7c8a1fe865aa7fa5fda0e32dab541a",
+  "choices": {
+    "logistic_regression": "ff37c84e63e36febc895f8716ff6c4582b86103781517ac96f6555e451ee41fe",
+    "tabpfn_v2": "0e8d22f47bb40c6522574fb2f2f8d2569c48a72a8ec2bb395060ae48688f8791"
+  }
+}

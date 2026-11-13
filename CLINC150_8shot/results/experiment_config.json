@@ -1,0 +1,45 @@
+{
+  "seed": 42,
+  "dataset": "clinc/oos-eval/data/data_full.json",
+  "dataset_commit": "828f8093932c8fe6ca7936c3d2e52903b1c523de",
+  "in_scope_only": true,
+  "sizes": {
+    "demonstration_pool": 10000,
+    "meta_training": 5000,
+    "validation": 3000,
+    "test": 4500
+  },
+  "k": 8,
+  "top_n": 32,
+  "mmr_lambda": 0.5,
+  "features": [
+    "max_similarity",
+    "mean_similarity",
+    "entropy_bits",
+    "top_label_vote"
+  ],
+  "target": "mean-token gold-label log-likelihood argmax",
+  "tie_order": [
+    0,
+    2,
+    1
+  ],
+  "tie_tolerance": 1e-06,
+  "prompt_version": "clinc150-icl-v1",
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 42,
+  "primary_pair": [
+    "tabpfn_v2",
+    "always_similar"
+  ],
+  "fixed_validation_tie_order": [
+    "similar",
+    "balanced",
+    "diverse"
+  ],
+  "holm_family": "all 10 unordered pairs among 5 deployable methods per split; Oracle comparisons separate",
+  "oracle_witness": "correct Similar, else correct Balanced, else correct Diverse, otherwise Similar; analysis only",
+  "query_gold": "meta-training scoring only; validation/test joined only for evaluation",
+  "test_protocol": "selectors, all choices and validation-best fixed sealed before test metrics",
+  "methodology": "original Banking77 7000/2000/8-shot; CLINC selectors retrained; no tuning on Validation/Test"
+}

@@ -1,0 +1,81 @@
+{
+  "unix": 1794535138.354932,
+  "best_fixed_selected_using_validation": "balanced",
+  "config": {
+    "seed": 42,
+    "dataset": "clinc/oos-eval/data/data_full.json",
+    "dataset_commit": "828f8093932c8fe6ca7936c3d2e52903b1c523de",
+    "in_scope_only": true,
+    "sizes": {
+      "demonstration_pool": 10000,
+      "meta_training": 5000,
+      "validation": 3000,
+      "test": 4500
+    },
+    "k": 8,
+    "top_n": 32,
+    "mmr_lambda": 0.5,
+    "features": [
+      "max_similarity",
+      "mean_similarity",
+      "entropy_bits",
+      "top_label_vote"
+    ],
+    "target": "mean-token gold-label log-likelihood argmax",
+    "tie_order": [
+      0,
+      2,
+      1
+    ],
+    "tie_tolerance": 1e-06,
+    "prompt_version": "clinc150-icl-v1",
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 42,
+    "primary_pair": [
+      "tabpfn_v2",
+      "always_similar"
+    ],
+    "fixed_validation_tie_order": [
+      "similar",
+      "balanced",
+      "diverse"
+    ],
+    "holm_family": "all 10 unordered pairs among 5 deployable methods per split; Oracle comparisons separate",
+    "oracle_witness": "correct Similar, else correct Balanced, else correct Diverse, otherwise Similar; analysis only",
+    "query_gold": "meta-training scoring only; validation/test joined only for evaluation",
+    "test_protocol": "selectors, all choices and validation-best fixed sealed before test metrics",
+    "methodology": "original Banking77 7000/2000/8-shot; CLINC selectors retrained; no tuning on Validation/Test"
+  },
+  "source_hashes": {
+    "experiments/clinc150_8shot/analysis.py": "64b58198215184e9dd6cba919a91391aea8af573c5ed0aadee72549fe3778518",
+    "experiments/clinc150_8shot/test_clinc150.py": "8fd5a5c12ae5426b9c08ff44f785bb6d4f690f5435b59b34ecae3b3f6fafa11a",
+    "experiments/clinc150_8shot/common.py": "dbbb007c42f24162edf9cc7d0d7bc08a73983deeab8c197070625222b17f27ad",
+    "experiments/clinc150_8shot/pipeline.py": "506d2f9f46bfde35c3cc80dff94aec4105822b1b937b4b40d71ba0935a41eca1",
+    "experiments/clinc150_8shot/run_experiment.sh": "060e94f9077f3fdd5c2ca4f62721e7610c5deda96aac57a95da2c0bd2deaecb2",
+    "src/retrieval.py": "20ad85779b755306b3bfc5894c7e2fa9a59cee1beafc2807930db3cb9a2be1d9",
+    "src/selection.py": "6d371f24b170b97838ef599550cf534fdf2c50f8933bb80e1ed8e659250b42b8",
+    "src/meta_features.py": "ed47375c5e85289697bb6ab2542dea4a5ce78d4927ad7f7d9126d85a573dfab1",
+    "src/meta_scoring.py": "b5196942092cb31f623c38c18725c9abbf9d63689370e158fa3491d3726d5054",
+    "src/meta_selectors.py": "321883940922e7fa9d9fc302072a5b6abe190c45d665faf3cdad495f4c58c1f4",
+    "src/llm_inference.py": "8847f2024f53cfa73eecb1477362ae6da32f2340661f94969c848069f7cc24c1",
+    "src/prompting.py": "e1f6571311df190531e055a52295425eb2ce972d018cacbb2da3dc4211a09a26",
+    "src/label_parsing.py": "b938d16471910f1b02686493e07588afe3c836aee6f3fa7954ffcb02c23fe28b",
+    "src/experiment_cache.py": "05ec6a484b6dcd7548db26cbc6d914c73c6addc14ef53d63e3991595d4279b8a"
+  },
+  "files": {
+    "results/meta_training_dataset.csv": "07373458abd54dec9a61d56b8cfe33324392ef3ca01453e714c947915cc014ff",
+    "results/validation_metrics.csv": "f7d54022f162cbad141514e22df693e35283ed5ba8c01cca1db82e221e1c23a2",
+    "results/experiment_config.json": "67a47b6b2f1b3563f128a4604dc51132bc926bdcb923a1b0683de224794f72a0",
+    "data/manifest.json": "000fa0a5aa9073c6044f9153a0bd70f319d6bdde2b52a48b060bc07360dbe6ec",
+    "results/plan_manifest.json": "d35735569bf4c21211967aa8c511c4c9b5583677867ae4fa086c78b2d223c434",
+    "models/tabpfn_v2.tabpfn_fit": "786ec67684559276003069c70d4b5e0078a130793667ae2e9bd5a079c6fd0414",
+    "models/logistic_regression.joblib": "be7c27f60e24b63b0884f350054346126dad08ade2b8643d0e15847ef6e3a2df",
+    "models/tabpfn_v2_metadata.json": "3146209988eae0646c6137a1923be0b721d45641a0251162331bed9d15404049",
+    "models/logistic_regression_metadata.json": "b6bd32fb90a0fb99686ccaf7defe11a5b1f76f68c85ffa29b0b347ac297e4aca",
+    "models/tabpfn_v2_fit_context.npz": "f7767cc112a8553791989e514980c57c5ab4ff77d95a013899d965a4ace346e6",
+    "results/logistic_regression_validation_choices.csv": "ff37c84e63e36febc895f8716ff6c4582b86103781517ac96f6555e451ee41fe",
+    "results/logistic_regression_test_choices.csv": "2d4eb9ead083a411b065274968507a4d33bea700b3c6ca793f688c2fe1451800",
+    "results/tabpfn_v2_validation_choices.csv": "0e8d22f47bb40c6522574fb2f2f8d2569c48a72a8ec2bb395060ae48688f8791",
+    "results/tabpfn_v2_test_choices.csv": "ec7484f8e4a2e23f23dcc1207bdc98d2351f97184f44f7455ae4b60161ae6d4c"
+  }
+}

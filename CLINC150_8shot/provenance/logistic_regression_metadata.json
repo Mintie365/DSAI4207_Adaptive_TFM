@@ -1,0 +1,45 @@
+{
+  "internal_holdout_accuracy": 0.349,
+  "internal_holdout_macro_f1": 0.34252520842945233,
+  "holdout_size": 1000,
+  "nested_oof_accuracy": 0.3748,
+  "nested_oof_macro_f1": 0.36802550947163404,
+  "best_parameters": {
+    "classifier__C": 10.0,
+    "classifier__class_weight": "balanced"
+  },
+  "folds": 5,
+  "validation_used_for_tuning": false,
+  "fit_seconds": 1.5521822919836268,
+  "n_training": 5000,
+  "features": [
+    "max_similarity",
+    "mean_similarity",
+    "entropy_bits",
+    "top_label_vote"
+  ],
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.1",
+    "datasets": "4.8.5",
+    "torch": "2.15.0",
+    "sentence-transformers": "5.7.0",
+    "transformers": "4.57.6"
+  },
+  "class_counts": {
+    "0": 1950,
+    "2": 1804,
+    "1": 1246
+  },
+  "retrained_on_clinc150": true,
+  "test_gold_used": false,
+  "training_dataset_sha256": "07373458abd54dec9a61d56b8cfe33324392ef3ca01453e714c947915cc014ff",
+  "reload_predictions_verified": true,
+  "saved_artifact_hashes": {
+    "results/logistic_regression_validation_choices.csv": "ff37c84e63e36febc895f8716ff6c4582b86103781517ac96f6555e451ee41fe",
+    "results/logistic_regression_test_choices.csv": "2d4eb9ead083a411b065274968507a4d33bea700b3c6ca793f688c2fe1451800",
+    "models/logistic_regression.joblib": "be7c27f60e24b63b0884f350054346126dad08ade2b8643d0e15847ef6e3a2df"
+  }
+}
